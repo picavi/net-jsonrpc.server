@@ -3,6 +3,7 @@
     using Picavi.JsonRpc.Server.Model;
     using System;
     using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     public class RequestBroker
     {
@@ -37,6 +38,11 @@
         public bool TryGetValue(string method, out Func<JsonRpcRequest, JsonRpcResponse> callback)
         {
             return methodMap.TryGetValue(method, out callback);
+        }
+
+        public async Task<Func<JsonRpcRequest, JsonRpcResponse>> GetValueAsync(string method)
+        {
+            return await Task.FromResult(methodMap[method]);
         }
     }
 }

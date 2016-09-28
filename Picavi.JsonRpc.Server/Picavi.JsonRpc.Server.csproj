@@ -84,6 +84,8 @@
     <Compile Include="DI\SimpleInjectorModuleCatalog.cs" />
     <Compile Include="DI\SimpleInjectorScopedContextFactory.cs" />
     <Compile Include="ErrorCodes.cs" />
+    <Compile Include="Extensions\PicaviRequestStream.cs" />
+    <Compile Include="Extensions\RequestValidationExtensions.cs" />
     <Compile Include="Model\JsonRpcError.cs" />
     <Compile Include="MethodDispatcherModule.cs" />
     <Compile Include="Model\Credentials.cs" />
@@ -93,6 +95,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestBroker.cs" />
+    <Compile Include="RequestValidator.cs" />
+    <Compile Include="ResponseFactory.cs" />
     <Compile Include="Rpc\OrderPicking.cs" />
     <Compile Include="Rpc\SystemAuth.cs" />
   </ItemGroup>

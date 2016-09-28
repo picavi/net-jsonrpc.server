@@ -17,5 +17,7 @@
 
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
+
+        public override string ToString() => JsonConvert.SerializeObject(this, Formatting.Indented);
     }
 }
