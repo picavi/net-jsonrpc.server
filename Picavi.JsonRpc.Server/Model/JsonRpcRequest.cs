@@ -18,6 +18,14 @@
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
 
+        public bool IsValid()
+        {
+            return (!string.IsNullOrEmpty(this.Id))
+                    && (!string.IsNullOrEmpty(this.JsonRpc))
+                    && (this.JsonRpc.Equals("2.0"))
+                    && (!string.IsNullOrEmpty(this.Method));
+        }
+
         public override string ToString() => JsonConvert.SerializeObject(this, Formatting.Indented);
     }
 }

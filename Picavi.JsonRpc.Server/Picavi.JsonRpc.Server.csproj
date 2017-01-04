@@ -85,7 +85,6 @@
     <Compile Include="DI\SimpleInjectorScopedContextFactory.cs" />
     <Compile Include="ErrorCodes.cs" />
     <Compile Include="Extensions\PicaviRequestStream.cs" />
-    <Compile Include="Extensions\RequestValidationExtensions.cs" />
     <Compile Include="Model\JsonRpcError.cs" />
     <Compile Include="MethodDispatcherModule.cs" />
     <Compile Include="Model\Credentials.cs" />
