@@ -14,9 +14,9 @@
 
         // Constructors
 
-        public SimpleInjectorModuleCatalog(Container container) 
+        public SimpleInjectorModuleCatalog(Container container)
         {
-            this.container = container; 
+            this.container = container;
         }
 
         // public Methods

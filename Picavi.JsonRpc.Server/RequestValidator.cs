@@ -20,7 +20,7 @@
 
         private async Task<Nancy.Response> Validate(NancyContext context, CancellationToken ct)
         {
-           var jsonString = await context.Request.Body.AsStringAsync(ct);
+            var jsonString = await context.Request.Body.AsStringAsync(ct);
             ct.ThrowIfCancellationRequested();
 
             // set streams position to beginning

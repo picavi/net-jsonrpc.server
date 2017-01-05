@@ -29,7 +29,7 @@
 
         private async Task<Response> DispatchMethodAsync(dynamic parameters, CancellationToken ct)
         {
-            var request =  await this.Request.Body.AsStringAsync(ct);
+            var request = await this.Request.Body.AsStringAsync(ct);
 
             var jsonRpcRequest = await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<JsonRpcRequest>(request));
 

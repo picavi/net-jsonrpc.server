@@ -5,7 +5,7 @@
     public class JsonRpcResponse
     {
         // public Properties
-        
+
         [JsonProperty(PropertyName = "jsonrpc")]
         public string JsonRpc { get { return "2.0"; } }
 

@@ -12,7 +12,7 @@
         [JsonProperty(PropertyName = "method")]
         public string Method { get; set; }
 
-        [JsonProperty(PropertyName="params")]
+        [JsonProperty(PropertyName = "params")]
         public object Params { get; set; }
 
         [JsonProperty(PropertyName = "id")]

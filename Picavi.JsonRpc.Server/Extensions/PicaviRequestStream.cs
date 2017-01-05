@@ -7,7 +7,7 @@
 
     public static class PicaviRequestStream
     {
-       public static async Task<string> AsStringAsync(this RequestStream request, CancellationToken ct)
+        public static async Task<string> AsStringAsync(this RequestStream request, CancellationToken ct)
         {
             using (var reader = new StreamReader(request))
             {

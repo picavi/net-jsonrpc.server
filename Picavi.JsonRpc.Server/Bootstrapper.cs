@@ -42,7 +42,7 @@
         // private Methods
 
         private void RegisterMethods(RequestBroker requestBroker)
-        { 
+        {
             var systemAuth = new SystemAuth();
             requestBroker.Add("system.login", systemAuth.Login);
 
