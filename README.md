@@ -16,15 +16,15 @@ This is the C#/.NET reference implementation.
 
 ## NuGet Packages
 
-[NancyFx](http://nancyfx.org/)
+[NancyFx](http://nancyfx.org/)  
 Nancy is a lightweight, low-ceremony, framework for building HTTP based services
 on .NET and Mono.
 
-[Json.NET](http://www.newtonsoft.com/json)
+[Json.NET](http://www.newtonsoft.com/json)  
 Popular high-performance JSON framework for .NET
 
-[Simple Injector](https://simpleinjector.org/)
+[Simple Injector](https://simpleinjector.org/)  
 Simple Injector is an open source dependency injection (DI) library for .NET
 
-[Topshelf](http://topshelf-project.com/)
+[Topshelf](http://topshelf-project.com/)  
 An easy service hosting framework for building Windows services using .NET
