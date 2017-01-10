@@ -48,6 +48,12 @@
 
             var orderPicking = new OrderPicking();
             requestBroker.Add("orderPicking.getPickList", orderPicking.GetPickList);
+            //added
+            requestBroker.Add("orderPicking.getPicks", orderPicking.GetPicks);
+
+
+
+
         }
     }
 }
