@@ -36,7 +36,7 @@
                     if (!jsonRPCRequest.IsValid())
                     {
                         
-                        var respone = ResponseFactory.BuildError(ErrorCodes.E_InvalidRequest, "Request is not valid json-rpc","The JSON sent is not a valid Request object",ID);
+                        var respone = ResponseFactory.BuildError(ErrorCodes.E_InvalidRequest, ErrorMessage.Msg_InvalidRequest,ErrorMessage.Dsc_InvalidRequest,ID);
                         return respone.ToString();
                     }
                     
@@ -45,13 +45,13 @@
                 {
                   //  var respone = ResponseFactory.BuildError(ErrorCodes.E_ParseError, "Parse error", "Invalid JSON was received by the server.An error occurred on the server while parsing the JSON text");
                    
-                    var respone = ResponseFactory.BuildError(ErrorCodes.E_ParseError, "Parse error", "Invalid JSON was received by the server.An error occurred on the server while parsing the JSON text",null);
+                    var respone = ResponseFactory.BuildError(ErrorCodes.E_ParseError, ErrorMessage.Msg_ParseError, ErrorMessage.Dsc_ParseError,null);
                     return respone.ToString();
                 }
             }
             else
             {
-                var respone = ResponseFactory.BuildError(ErrorCodes.E_InvalidRequest, "Request is not valid json-rpc", "The JSON sent is not a valid Request object", null);
+                var respone = ResponseFactory.BuildError(ErrorCodes.E_InvalidRequest, ErrorMessage.Msg_InvalidRequest, ErrorMessage.Dsc_InvalidRequest, null);
                 return respone.ToString();
             }
           

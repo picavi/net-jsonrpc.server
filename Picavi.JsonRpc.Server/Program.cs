@@ -30,12 +30,12 @@ namespace Picavi.JsonRpc.Server
                     Console.WriteLine(JsonConvert.SerializeObject(jsonRpcRequest));
 
 
-                    //added
-                    var pickList1 = new Picklist() { Ident = "4712" };
-                    jsonRpcRequest = new JsonRpcRequest() { Id = "3", Method = "orderPicking.getPicks", Params = pickList1 };
+                    ////added
+                    //var pickList1 = new Picklist() { Ident = "4712" };
+                    //jsonRpcRequest = new JsonRpcRequest() { Id = "3", Method = "orderPicking.getPicks", Params = pickList1 };
 
-                    Console.WriteLine("\nExample orderPicking.getPicks request:");
-                    Console.WriteLine(JsonConvert.SerializeObject(jsonRpcRequest));
+                    //Console.WriteLine("\nExample orderPicking.getPicks request:");
+                    //Console.WriteLine(JsonConvert.SerializeObject(jsonRpcRequest));
 
                     Console.ReadLine();
                 }

@@ -75,7 +75,7 @@
 
              
                 var ID = jsonRpcRequest.Id;
-                var respone = ResponseFactory.BuildError(ErrorCodes.E_MethodNoFound, "Method not found","The method does not exist / is not available",ID);
+                var respone = ResponseFactory.BuildError(ErrorCodes.E_MethodNoFound, ErrorMessage.Msg_MethodNoFound,ErrorMessage.Dsc_MethodNoFound,ID);
                 return respone.ToString();
             //    throw new MissingMethodException("jsonRpcRequest", jsonRpcRequest.Method);
             }
