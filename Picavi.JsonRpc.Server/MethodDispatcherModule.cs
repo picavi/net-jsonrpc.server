@@ -58,14 +58,26 @@
 
             Func<JsonRpcRequest, JsonRpcResponse> dispatchMethod;
             JsonRpcResponse jsonRpcResponse;
+          //added
+
 
             if (requestBroker.TryGetValue(jsonRpcRequest.Method, out dispatchMethod))
             {
                 jsonRpcResponse = dispatchMethod(jsonRpcRequest);
+                if(jsonRpcResponse.Result==null)
+                {
+                  return jsonRpcResponse.ToString();
+                }
+
             }
             else
             {
-                throw new MissingMethodException("jsonRpcRequest", jsonRpcRequest.Method);
+
+             
+                var ID = jsonRpcRequest.Id;
+                var respone = ResponseFactory.BuildError(ErrorCodes.E_MethodNoFound, ErrorMessage.Msg_MethodNoFound,ErrorMessage.Dsc_MethodNoFound,ID);
+                return respone.ToString();
+            //    throw new MissingMethodException("jsonRpcRequest", jsonRpcRequest.Method);
             }
 
             return Response.AsJson(jsonRpcResponse);
